@@ -4,6 +4,7 @@ Este repositório contém implementações de algoritmos de **criptografia clás
 
 1. Cifra de César
 2. CIfra de Vigenère
+3. Cifra de Playfair
 
 ## Objetivo
 
