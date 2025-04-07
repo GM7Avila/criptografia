@@ -4,7 +4,6 @@
 
 #define TAM_MAX 1000
 
-/*************  ✨ Windsurf Command ⭐  *************/
 /**
  * Encrypts the given text using the Caesar cipher algorithm.
  *
@@ -15,8 +14,6 @@
  * @param key The number of positions each letter in the text is shifted.
  *            Should be a non-negative integer.
  */
-
-/*******  2ae9d4aa-98a2-4f77-8d41-5164773ed015  *******/
 void encrypt(char text[], int key) {
   for(int i=0; text[i] != '\0'; i++) {
     if(isalpha(text[i])) {
