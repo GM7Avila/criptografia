@@ -5,20 +5,43 @@
 #define TAM_MAX 1000
 
 /**
- * Encrypts the given text using the Caesar cipher algorithm.
+ * Criptografa o texto fornecido utilizando o algoritmo da Cifra de César.
  *
- * Each letter in the input text is shifted by the specified key value
- * within the alphabet. Non-alphabetic characters remain unchanged.
+ * Cada letra no texto de entrada é deslocada, dentro do alfabeto, por um valor
+ * determinado pela chave (key). Caracteres não alfabéticos permanecem inalterados.
  *
- * @param text The input string to be encrypted. It is modified in place.
- * @param key The number of positions each letter in the text is shifted.
- *            Should be a non-negative integer.
+ * @param text Texto de entrada a ser criptografado. É modificado diretamente.
+ * @param key Número de posições que cada letra do texto será deslocada.
+ *            Deve ser um número inteiro não negativo.
  */
+
 void encrypt(char text[], int key) {
   for(int i=0; text[i] != '\0'; i++) {
+    
+    // se for um caracter alfabetico
     if(isalpha(text[i])) {
-      char base = isupper(text[i]) ? 'A' : 'a';
+      // verifica se é maiusculo ou minusculo
+      char base = isupper(text[i]) ? 'A' : 'a'; // base recebe: 'a' (ASCII: 97) ou 'A' (ASCII: 65)
+      
+      /*
+        Aplica a cifra de César à letra text[i]:
+
+        1. Subtrai a base ('A' ou 'a') para converter a letra em um valor entre 0 e 25.
+          Exemplo: 'Z' - 'A' = 90 - 65 = 25
+
+        2. Soma a chave de deslocamento (key).
+          Exemplo: 25 + 3 = 28
+
+        3. Aplica módulo 26 para garantir que o valor continue no intervalo do alfabeto.
+          Exemplo: 28 % 26 = 2
+
+        4. Soma novamente a base para converter o valor numérico de volta para caractere.
+          Exemplo: 2 + 'A' = 67 → 'C'
+
+        Resultado: 'Z' se torna 'C' com deslocamento 3
+      */
       text[i] = (text[i] - base + key) % 26 + base;
+ 
     }
   }
 }
