@@ -44,7 +44,7 @@ Para compilar e executar a implementação da Cifra de Vigenère em C, siga os s
 1. Abra o terminal e navegue até o diretório onde está localizado o arquivo `cifravigenere.c`.
 2. Compile o código-fonte utilizando o compilador GCC: `gcc vigenere.c -o cifravigenere`
 
-Execute o programa compilado: `./vigenere`
+Execute o programa compilado: `./cifravigenere`
 
 Durante a execução, o programa solicitará:
 
