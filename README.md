@@ -1,22 +1,37 @@
 # Criptografia Clássica
 
-Este repositório contém implementações de algoritmos de **criptografia clássica** utilizando a linguagem **C**, com foco educacional. O objetivo é compreender como esses algoritmos funcionam internamente, fortalecendo conceitos de segurança da informação.
+Este repositório contém implementações de **algoritmos clássicos de criptografia simétrica** , escritas em **linguagem C** , com fins **educacionais** . O objetivo é explorar os fundamentos da criptografia através de implementações práticas e didáticas, reforçando conceitos de segurança da informação.Algoritmos Clássicos de Criptografia Simétrica
 
-1. Cifra de César
-2. CIfra de Vigenère
-3. Cifra de Playfair
+## 📁 Estrutura do Repositório
+
+Os algoritmos estão organizados em **pastas e subpastas** temáticas:
+
+### 1. [Algoritmos Clássicos de Criptografia Simétrica](algoritmos-classicos)
+
+- [1.1. Cifra de César](algoritmos-classicos/cifra-de-cesar)
+- [1.2. Cifra de Vigenère](algoritmos-classicos/cifra-de-vigenere)
+- [1.3. Cifra de Playfair](algoritmos-classicos/cifra-de-playfair)
+
+### 2. [Cifras de Bloco](cifra-de-blocos/README.md)
+
+- [2.1. Simple S-box](cifra-de-blocos/simple-s-box)
+- [2.2. Cifra de Feistel](cifra-de-blocos/feistel)
 
 ## Objetivo
 
-Explorar algortimos clássicos de Criptografia Simétrica de forma prática utilizando a Linguagem C.
+Explorar algoritmos clássicos de **criptografia simétrica** por meio de **implementações em linguagem C** , com foco em:
+
+- Entendimento de como os algoritmos operam internamente
+- Fortalecimento de conceitos fundamentais de segurança
+- Visualização da lógica de cifragem/decifragem passo a passo
 
 ## Conceitos Fundamentais
 
 ### Criptografia
 
-Criptografia é o estudo e prática de técnicas para **proteger informações** de acesso não autorizado, transformando dados legíveis (texto claro) em um formato ininteligível (texto cifrado), e vice-versa.
+A criptografia é o estudo e aplicação de técnicas para **proteger informações** de acessos não autorizados. Ela transforma dados legíveis (texto claro) em dados ininteligíveis (texto cifrado), e vice-versa.
 
-### Chaves criptográficas
+#### Chaves criptográficas
 
 A **chave** é um elemento essencial na criptografia. Ela define como a informação será cifrada e decifrada.
 
@@ -37,3 +52,7 @@ Onde:
 - E: função de criptografia
 - K: chave
 - M: mensagem original (plaintext)
+
+### Obeservações
+
+- Os conteúdos desse repositório são códigos dos algoritmos acompanhado de arquivos README, que detalha o funcionamento e os princípios teóricos dos algoritmos.
