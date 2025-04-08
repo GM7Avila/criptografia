@@ -2,7 +2,7 @@
 
 Este repositório contém implementações de **algoritmos clássicos de criptografia simétrica** , escritas em **linguagem C** , com fins **educacionais** . O objetivo é explorar os fundamentos da criptografia através de implementações práticas e didáticas, reforçando conceitos de segurança da informação.Algoritmos Clássicos de Criptografia Simétrica
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 Os algoritmos estão organizados em **pastas e subpastas** temáticas:
 
