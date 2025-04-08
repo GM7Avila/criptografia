@@ -40,13 +40,17 @@ A S-box é um componente essencial para prover confusão. Trata-se de uma funç�
 - **Balanceamento**: Saídas uniformemente distribuídas.
 - **Resistência à análise diferencial**: Pequenas diferenças em entradas próximas não devem produzir diferenças previsíveis nas saídas.
 
-<img src="https://morf.lv/images//blowfish/03fig01.jpg" alt="simple-s-box" width="400">
-
 ### Vulnerabilidades
 
 - **Projetos fracos**: S-boxes mal construídas permitem ataques como análise diferencial ou linear.
 - **Backdoors criptográficos**: Possibilidade de inserir mapeamentos previsíveis de forma intencional.
 - **Falta de aleatoriedade**: S-boxes fixas e públicas podem ser alvos de otimizações por atacantes.
+
+## Cifra de Feistel
+
+A estrutura de Feistel é uma das mais influentes arquiteturas no design de cifras de bloco. Ela surgiu como uma maneira prática de construir uma cifra de bloco segura e reversível, aproximando-se do comportamento da cifra de bloco ideal — aquela que simularia uma permutação aleatória para cada chave, mas que é impraticável de ser implementada diretamente devido à sua complexidade.
+
+As cifras anteriores à estrutura de Feistel, como substituições diretas ou permutações simples, não possuíam um caminho fácil de reversão. A estrutura de Feistel resolve isso mantendo a simetria no processo de cifragem e decifragem com um único algoritmo, bastando inverter a ordem das chaves. Ela é um exemplo claro de produto de cifras, combinando operações simples (XOR, permutação, substituição) em múltiplas rodadas. Isso permite alcançar difusão e confusão, como propôs Claude Shannon, de forma eficaz e modular.
 
 ## Modos de Operação
 
