@@ -16,6 +16,7 @@ Os algoritmos estão organizados em **pastas e subpastas** temáticas:
 
 - [2.1. Simple S-box](cifra-de-blocos/simple-s-box)
 - [2.2. Cifra de Feistel](cifra-de-blocos/feistel)
+- [2.3 DES (Data Encryption Standard)](cifra-de-blocos/data-encryption-standard-des) (simplified)
 
 ## Objetivo
 
