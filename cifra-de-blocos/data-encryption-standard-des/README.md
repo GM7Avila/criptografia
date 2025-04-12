@@ -43,7 +43,7 @@ Aplica a permutação inversa à combinação final dos blocos.
 
 - **Confusão**: obtida pelas S-boxes
 - **Difusão**: promovida pelas permutações
-- **Uso** de subchaves distintas em cada rodada
+- Uso de **subchaves distintas** em cada rodada
 
 ## Observações Técnicas e de Segurança
 
